@@ -1,0 +1,160 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Play List | Harold Garcia</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<!-- JQuery, Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	</head>
+	<body>
+
+
+	<!-- Espacio para una plantilla -->
+	<script id="template_playlists" type="text/x-handlebars-template">
+	<!-- Lista de listas de lectura
+	reemplaza el contenido de id="dropdown_listas"
+	-->
+	{{#each this}}
+	<li><a href="#">{{list_name}}</a></li>
+	{{/each}}
+	</script>
+
+	<script id="template_songs" type="text/x-handlebars-template">
+	<!-- Lista de libros 
+	reemplaza el contenido de id="lista_libros"
+	-->
+	{{#each songs}}
+	<a class="list-group-item">
+	{{name}} - {{artist}} - {{duration}}
+	</a>
+	{{/each}}
+	</script>
+
+
+	<div class="page-container">
+
+	<!-- top navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar-header">
+	   <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+	   </button>
+	   <a class="navbar-brand" href="#">PlayList Harold Garcia</a>
+	</div>
+	</nav>
+
+	<div class="container-fluid">
+	<div class="row row-offcanvas row-offcanvas-left">
+
+	<!--sidebar-->
+	<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+	  <div data-spy="affix" data-offset-top="45" data-offset-bottom="90">
+		<ul class="nav" id="sidebar-nav">
+		  <li><a href="#">Home</a></li>
+		</ul>
+	   </div>
+	</div><!--/sidebar-->
+
+	<!--/main-->
+	<div class="col-xs-12 col-sm-9" data-spy="scroll" data-target="#sidebar-nav">
+
+	<h1 id="section1">listas De Reproduccion</h1>
+
+	  <div class="panel panel-default">
+		<div class="panel-heading"><a href="#" class="pull-right">Ver Todo</a> <h4>Listas</h4></div>
+		<div class="panel-body">
+		  <div class="list-group" id="playlists">
+			<a href="#" class="list-group-item active">Active item</a>
+			<a href="#" class="list-group-item">Second item</a>
+			<a href="#" class="list-group-item">Third item</a>
+		  </div>
+		</div>
+	  </div><!--/panel-->
+	  
+	  <div class="row">
+		 <div class="col-sm-6">
+			<div class="panel panel-default">
+			  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Newest Items</h4></div>
+				<div class="panel-body">
+				  <div class="list-group" id="songs">
+				  </div>
+				</div><!--/panel-body-->
+			</div><!--/panel-->
+		</div><!--/col-->
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+			  <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Newest Items</h4></div>
+				<div class="panel-body">
+				  <div class="list-group">
+					<a href="#" class="list-group-item active">Active item</a>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+					<a href="#" class="list-group-item">Another item</a>
+					<a href="#" class="list-group-item">Another item</a>
+					<a href="#" class="list-group-item">Another item</a>
+					<a href="#" class="list-group-item">Another item</a>
+					<a href="#" class="list-group-item">Another item</a>
+					<a href="#" class="list-group-item">Another item</a>
+				  </div>
+				</div><!--/panel-body-->
+			</div><!--/panel-->
+		</div><!--/col-->
+
+	</div><!--/row-->
+	  
+	</div>
+	</div><!--/.container-->
+	</div><!--/.page-container-->
+
+	<footer><!--footer-->
+	<div class="container">
+	<div class="row">
+	  <ul class="list-unstyled text-right">
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">Harold</a>
+		</li>
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">Ingenieria</a>
+		</li>
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">Desarrollo</a>
+		</li>
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">Julian</a>
+		</li>
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">De Sistemas</a>
+		</li>
+	   <li class="col-sm-4 col-xs-6">
+		  <a href="#">De Aplicaciones Web</a>
+		</li>
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">Garcia</a>
+		</li>
+		<li class="col-sm-4 col-xs-6">
+		  <a href="#">Y Computacion</a>
+		</li>
+	  </ul>
+	</div><!--/row-->
+	</div><!--/container-->
+	</footer>
+
+	<!-- script references -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+	</body>
+	</html>
