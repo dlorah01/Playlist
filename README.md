@@ -3,7 +3,7 @@ This project was generated using HTML, Javascript and CSS. Is a simple playlist 
 
 ## Deployment
 
-You can download and deploy the project clicking on the `index.html` file or it can be deploying in this URL: `http://dlorah01.github.io/playlist/`.
+You can download and deploy the project clicking on the `index.html` file or it can be deploying in this URL: `http://dlorah01.github.io/Playlist/`.
 
 ## Further help
 
