@@ -1,33 +1,11 @@
-# javascript.github.io
-dasdasdasdasdas
+# PlayList
+This project was generated using HTML, Javascript and CSS. Is a simple playlist which can is loaded using JSON documents.
 
+## Deployment
 
-
- Flags
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+You can download and deploy the project clicking on the `index.html` file or it can be deploying in this URL: `http://dlorah01.github.io/javascript.github.io/`.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For any suggestions, you can send me a message to ths email directions: `dlorahnailuj@hotmail.com`, `hj.garcia652@gmail.com` or `hj.garcia652@uniandes.edu.co`.
 
